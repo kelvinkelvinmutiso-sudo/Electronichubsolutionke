@@ -57,7 +57,7 @@ const PRODUCTS: Product[] = [
     category: 'tv',
     tag: 'HOT',
     rating: 5,
-    image: 'https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?auto=format&fit=crop&q=80&w=800'
+    image: '/src/assets/images/regenerated_image_1778679098819.jpg'
   },
   {
     id: 2,
@@ -68,7 +68,7 @@ const PRODUCTS: Product[] = [
     category: 'tv',
     tag: 'NEW',
     rating: 4,
-    image: 'https://images.unsplash.com/photo-1552975084-6e027cd345c2?auto=format&fit=crop&q=80&w=800'
+    image: '/src/assets/images/regenerated_image_1778679090032.jpg'
   },
   {
     id: 3,
@@ -79,7 +79,7 @@ const PRODUCTS: Product[] = [
     category: 'fridge',
     tag: 'DEAL',
     rating: 5,
-    image: 'https://images.unsplash.com/photo-1571175432244-5969165b4c48?auto=format&fit=crop&q=80&w=800'
+    image: '/src/assets/images/regenerated_image_1778679092542.jpg'
   },
   {
     id: 4,
@@ -89,7 +89,7 @@ const PRODUCTS: Product[] = [
     originalPrice: 26000,
     category: 'fridge',
     rating: 4,
-    image: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=800'
+    image: '/src/assets/images/regenerated_image_1778679094151.jpg'
   },
   {
     id: 5,
@@ -100,7 +100,7 @@ const PRODUCTS: Product[] = [
     category: 'washing',
     tag: 'NEW',
     rating: 5,
-    image: 'https://images.unsplash.com/photo-1626806819282-2c1dc01a5e0c?auto=format&fit=crop&q=80&w=800'
+    image: '/src/assets/images/regenerated_image_1778679101623.jpg'
   },
   {
     id: 6,
@@ -110,7 +110,7 @@ const PRODUCTS: Product[] = [
     originalPrice: 33000,
     category: 'washing',
     rating: 4,
-    image: 'https://images.unsplash.com/photo-1545173168-9f1947eebb9f?auto=format&fit=crop&q=80&w=800'
+    image: '/src/assets/images/regenerated_image_1778679095796.jpg'
   },
   {
     id: 7,
@@ -121,7 +121,7 @@ const PRODUCTS: Product[] = [
     category: 'microwave',
     tag: 'HOT',
     rating: 5,
-    image: 'https://images.unsplash.com/photo-1574362848149-11496d93a7c7?auto=format&fit=crop&q=80&w=800'
+    image: '/src/assets/images/regenerated_image_1778679100165.jpg'
   },
   {
     id: 8,
@@ -131,7 +131,7 @@ const PRODUCTS: Product[] = [
     originalPrice: 22000,
     category: 'cooker',
     rating: 4,
-    image: 'https://images.unsplash.com/photo-1584622781564-1d9876a13d00?auto=format&fit=crop&q=80&w=800'
+    image: '/src/assets/images/regenerated_image_1778679097327.jpg'
   },
   {
     id: 9,
@@ -411,10 +411,10 @@ const App = () => {
             className="grid grid-cols-2 gap-3.5"
           >
             {[
-              { tag: 'HOT', image: 'https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?auto=format&fit=crop&q=80&w=400', name: 'Smart TVs', price: 'Ksh 18,000' },
-              { image: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=400', name: 'Fridges', price: 'Ksh 22,000' },
-              { tag: 'NEW', image: 'https://images.unsplash.com/photo-1626806819282-2c1dc01a5e0c?auto=format&fit=crop&q=80&w=400', name: 'Washers', price: 'Ksh 28,000' },
-              { image: 'https://images.unsplash.com/photo-1574362848149-11496d93a7c7?auto=format&fit=crop&q=80&w=400', name: 'Microwaves', price: 'Ksh 6,500' },
+              { tag: 'HOT', image: '/src/assets/images/regenerated_image_1778679098819.jpg', name: 'Smart TVs', price: 'Ksh 18,000' },
+              { image: '/src/assets/images/regenerated_image_1778679094151.jpg', name: 'Fridges', price: 'Ksh 22,000' },
+              { tag: 'NEW', image: '/src/assets/images/regenerated_image_1778679101623.jpg', name: 'Washers', price: 'Ksh 28,000' },
+              { image: '/src/assets/images/regenerated_image_1778679100165.jpg', name: 'Microwaves', price: 'Ksh 6,500' },
               { wide: true, image: 'https://images.unsplash.com/photo-1522338242992-e1a54906a8da?auto=format&fit=crop&q=80&w=800', name: 'Gas Cookers & Stoves', price: 'From Ksh 8,500' }
             ].map((card, i) => (
               <div 
@@ -679,7 +679,7 @@ const App = () => {
               onClick={() => filterAndScroll('fridge')}
             >
               <img 
-                src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=800" 
+                src="/src/assets/images/regenerated_image_1778679094151.jpg" 
                 alt="Fridges" 
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 referrerPolicy="no-referrer"
@@ -695,10 +695,10 @@ const App = () => {
             </div>
 
             {[
-              { id: 'tv', name: 'Smart TVs', sub: '32" to 65" — 4K, FHD & Smart', image: 'https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?auto=format&fit=crop&q=80&w=800' },
-              { id: 'washing', name: 'Washing Machines', sub: 'Top loaders, front loaders & twin tubs', image: 'https://images.unsplash.com/photo-1626806819282-2c1dc01a5e0c?auto=format&fit=crop&q=80&w=800' },
-              { id: 'microwave', name: 'Microwaves', sub: 'Solo, grill & convection models', image: 'https://images.unsplash.com/photo-1574362848149-11496d93a7c7?auto=format&fit=crop&q=80&w=800' },
-              { id: 'cooker', name: 'Gas Cookers & Stoves', sub: '2, 3 & 4 burner with oven', image: 'https://images.unsplash.com/photo-1584622781564-1d9876a13d00?auto=format&fit=crop&q=80&w=800' },
+              { id: 'tv', name: 'Smart TVs', sub: '32" to 65" — 4K, FHD & Smart', image: '/src/assets/images/regenerated_image_1778679098819.jpg' },
+              { id: 'washing', name: 'Washing Machines', sub: 'Top loaders, front loaders & twin tubs', image: '/src/assets/images/regenerated_image_1778679101623.jpg' },
+              { id: 'microwave', name: 'Microwaves', sub: 'Solo, grill & convection models', image: '/src/assets/images/regenerated_image_1778679100165.jpg' },
+              { id: 'cooker', name: 'Gas Cookers & Stoves', sub: '2, 3 & 4 burner with oven', image: '/src/assets/images/regenerated_image_1778679097327.jpg' },
               { id: 'gym', name: 'Gym Equipment', sub: 'Treadmills, Dumbbells & Bikes', image: 'https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&q=80&w=800' },
               { id: 'furniture', name: 'Furniture', sub: 'Sofas, Beds & Dining Tables', image: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&q=80&w=800' },
               { id: 'kitchen', name: 'Kitchen Appliances', sub: 'Blenders, Air Fryers & Kettles', image: 'https://images.unsplash.com/photo-1585238342024-78d387f4a707?auto=format&fit=crop&q=80&w=800' },
