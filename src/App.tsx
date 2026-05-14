@@ -32,7 +32,7 @@ import {
 } from 'lucide-react';
 
 // --- Types ---
-type Category = 'all' | 'tv' | 'fridge' | 'washing' | 'microwave' | 'cooker' | 'gym' | 'furniture' | 'kitchen' | 'household';
+type Category = 'all' | 'tv' | 'fridge' | 'washing' | 'microwave' | 'cooker' | 'lighting' | 'furniture' | 'kitchen' | 'household';
 
 interface Product {
   id: number;
@@ -50,25 +50,25 @@ interface Product {
 const PRODUCTS: Product[] = [
   {
     id: 1,
-    name: 'Samsung 43" 4K Smart TV UA43AU7000',
-    brand: 'Samsung',
-    price: 39500,
-    originalPrice: 45000,
+    name: 'Synix SoundSpeaker SYN-S60',
+    brand: 'Synix',
+    price: 12500,
+    originalPrice: 15000,
     category: 'tv',
     tag: 'HOT',
     rating: 5,
-    image: '/src/assets/images/regenerated_image_1778679098819.jpg'
+    image: 'https://lh3.googleusercontent.com/d/1AZ1SCmPGpV0mpYtMRtOM948U5XYmgMzj'
   },
   {
     id: 2,
-    name: 'Hisense 32" HD Smart TV 32A4H',
-    brand: 'Hisense',
-    price: 18500,
-    originalPrice: 22000,
-    category: 'tv',
+    name: 'AILYONS FS-1801 Standing Fan',
+    brand: 'AILYONS',
+    price: 3500,
+    originalPrice: 4500,
+    category: 'household',
     tag: 'NEW',
     rating: 4,
-    image: '/src/assets/images/regenerated_image_1778679090032.jpg'
+    image: 'https://lh3.googleusercontent.com/d/1ry1L2kbBBmG2NSxeXRksROQoeEkQ4TkB'
   },
   {
     id: 3,
@@ -79,38 +79,38 @@ const PRODUCTS: Product[] = [
     category: 'fridge',
     tag: 'DEAL',
     rating: 5,
-    image: '/src/assets/images/regenerated_image_1778679092542.jpg'
+    image: 'https://lh3.googleusercontent.com/d/1u3PYybXdTyDplUOE6GTvZAqS2lvDrq5k'
   },
   {
     id: 4,
-    name: 'Bruhm 150L Single Door Fridge BRD-150MD',
-    brand: 'Bruhm',
-    price: 22500,
-    originalPrice: 26000,
-    category: 'fridge',
-    rating: 4,
-    image: '/src/assets/images/regenerated_image_1778679094151.jpg'
+    name: 'SAYONA PPS Subwoofer System',
+    brand: 'Sayona',
+    price: 8500,
+    originalPrice: 10500,
+    category: 'household',
+    rating: 5,
+    image: 'https://lh3.googleusercontent.com/d/1W0-OdkBVbjZggBu7KzQrLNraY3w0OUqe'
   },
   {
     id: 5,
-    name: 'Samsung 7kg Front Loader WW70T4020CX',
-    brand: 'Samsung',
-    price: 55000,
-    originalPrice: 65000,
-    category: 'washing',
+    name: 'AILIPU KL-630s Subwoofer System',
+    brand: 'Ailipu',
+    price: 8500,
+    originalPrice: 10500,
+    category: 'household',
     tag: 'NEW',
     rating: 5,
-    image: '/src/assets/images/regenerated_image_1778679101623.jpg'
+    image: 'https://lh3.googleusercontent.com/d/1IxAW5yuuRlnkfCgIpbHmm9Fh_DzOMwap'
   },
   {
     id: 6,
-    name: 'Mika 6kg Top Loader Washing Machine MWM601WH',
-    brand: 'Mika',
-    price: 28000,
-    originalPrice: 33000,
-    category: 'washing',
-    rating: 4,
-    image: '/src/assets/images/regenerated_image_1778679095796.jpg'
+    name: 'Elegant 6-Seater Dining Table',
+    brand: 'OakWood',
+    price: 45000,
+    originalPrice: 55000,
+    category: 'furniture',
+    rating: 5,
+    image: 'https://lh3.googleusercontent.com/d/1AIJ11wsX9d0nL74lAzg1X0rfJoKICedl'
   },
   {
     id: 7,
@@ -135,35 +135,35 @@ const PRODUCTS: Product[] = [
   },
   {
     id: 9,
-    name: 'Motorized Treadmill with Auto Incline',
-    brand: 'ProFitness',
-    price: 85000,
-    originalPrice: 110000,
-    category: 'gym',
+    name: 'StarWorth Air Cooler ZYY-SLF01',
+    brand: 'StarWorth',
+    price: 12500,
+    originalPrice: 15500,
+    category: 'household',
     tag: 'DEAL',
     rating: 5,
-    image: 'https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&q=80&w=800'
+    image: 'https://lh3.googleusercontent.com/d/1hxunv7m51JX8yxuzaN_436dlWPpSc5ge'
   },
   {
     id: 10,
-    name: 'Adjustable Dumbbell Set (20kg)',
-    brand: 'IronMaster',
-    price: 12500,
-    originalPrice: 15000,
-    category: 'gym',
-    rating: 4,
-    image: 'https://images.unsplash.com/photo-1638536532686-d610adfc8e5c?auto=format&fit=crop&q=80&w=800'
+    name: 'AILYONS Subwoofer System',
+    brand: 'Ailyons',
+    price: 8500,
+    originalPrice: 10500,
+    category: 'household',
+    rating: 5,
+    image: 'https://lh3.googleusercontent.com/d/1LgL_OtTMaCIMyyeXjNR2q2t2C6y3mhxO'
   },
   {
     id: 11,
-    name: 'Spin Bike Studio Edition',
-    brand: 'VeloCycle',
-    price: 32000,
-    originalPrice: 40000,
-    category: 'gym',
+    name: 'Roch Refrigerator RFR-180DT-B',
+    brand: 'Roch',
+    price: 32500,
+    originalPrice: 38000,
+    category: 'fridge',
     tag: 'NEW',
     rating: 5,
-    image: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&q=80&w=800'
+    image: 'https://lh3.googleusercontent.com/d/1HoT9TYdEu0pWlmY5g-fu7A0fpm7no7nr'
   },
   {
     id: 12,
@@ -174,71 +174,71 @@ const PRODUCTS: Product[] = [
     category: 'furniture',
     tag: 'HOT',
     rating: 5,
-    image: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&q=80&w=800'
+    image: 'https://lh3.googleusercontent.com/d/1LX6L3ZQHHgFl_5e0Pj65yZ09EPIlkEFh'
   },
   {
     id: 13,
-    name: 'Modern 6-Seater Dining Set',
-    brand: 'OakWood',
-    price: 68000,
-    originalPrice: 85000,
+    name: 'Solid Wood Dining Table',
+    brand: 'Royal Home',
+    price: 14500,
+    originalPrice: 18000,
     category: 'furniture',
-    rating: 4,
-    image: 'https://images.unsplash.com/photo-1577145781056-2315a646c243?auto=format&fit=crop&q=80&w=800'
+    rating: 5,
+    image: 'https://lh3.googleusercontent.com/d/1xSr7OQImUtGlkZtrpMIy7EVYwWQFbXI9'
   },
   {
     id: 14,
-    name: 'King Size Orthopedic Bed Frame',
-    brand: 'SleepWell',
-    price: 35000,
-    originalPrice: 42000,
+    name: 'Modern Coffee Table',
+    brand: 'OakWood',
+    price: 12500,
+    originalPrice: 15500,
     category: 'furniture',
     tag: 'NEW',
     rating: 5,
-    image: 'https://images.unsplash.com/photo-1505693419148-ad3b471e4c30?auto=format&fit=crop&q=80&w=800'
+    image: 'https://lh3.googleusercontent.com/d/182E6cvVlFFey9f-WqojrHVWw27gGlXbX'
   },
   {
     id: 15,
-    name: 'NutriBullet High-Speed Blender',
-    brand: 'NutriBullet',
-    price: 12500,
-    originalPrice: 15000,
-    category: 'kitchen',
+    name: 'Stylish Accent Chair',
+    brand: 'OakWood',
+    price: 14500,
+    originalPrice: 18000,
+    category: 'furniture',
     tag: 'HOT',
     rating: 5,
-    image: 'https://images.unsplash.com/photo-1585238342024-78d387f4a707?auto=format&fit=crop&q=80&w=800'
+    image: 'https://lh3.googleusercontent.com/d/1vYy632srp3xyCb8RRBqzJ3Ur3X6MX9Ms'
   },
   {
     id: 16,
-    name: 'Philips Essential Air Fryer',
-    brand: 'Philips',
-    price: 18000,
-    originalPrice: 22000,
-    category: 'kitchen',
+    name: 'High-Speed HDMI Cable (2m)',
+    brand: 'Generic',
+    price: 1500,
+    originalPrice: 2500,
+    category: 'household',
     tag: 'DEAL',
     rating: 5,
-    image: 'https://images.unsplash.com/photo-1626074353765-517a681e40be?auto=format&fit=crop&q=80&w=800'
+    image: 'https://lh3.googleusercontent.com/d/19cTTaGh0yGWAMS3CbW3TzMTxIvgs1FnP'
   },
   {
     id: 17,
-    name: 'Dyson V11 Absolute Vacuum Cleaner',
-    brand: 'Dyson',
-    price: 65000,
-    originalPrice: 75000,
+    name: 'ZARYT WATER DESPENSER Z-D753',
+    brand: 'Zaryt',
+    price: 18500,
+    originalPrice: 22000,
     category: 'household',
     tag: 'HOT',
     rating: 5,
-    image: 'https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&q=80&w=800'
+    image: 'https://lh3.googleusercontent.com/d/1DpGReN6iHOi4KlPQPX7Mxd0Lx0IWVcXK'
   },
   {
     id: 18,
-    name: 'Ramtons Hot & Cold Water Dispenser',
-    brand: 'Ramtons',
-    price: 14500,
-    originalPrice: 18000,
-    category: 'household',
-    rating: 4,
-    image: 'https://images.unsplash.com/photo-1608222351212-18fe0ec7b13b?auto=format&fit=crop&q=80&w=800'
+    name: 'Roch 20L Microwave Oven',
+    brand: 'Roch',
+    price: 6800,
+    originalPrice: 8500,
+    category: 'microwave',
+    rating: 5,
+    image: 'https://lh3.googleusercontent.com/d/1-Wnxa84n-rTVvc9NBB3f78Ys1pgSqq5O'
   }
 ];
 
@@ -253,8 +253,8 @@ const SectionHead = ({ tag, title, desc, center = false }: { tag: string; title:
     className={`mb-14 ${center ? 'text-center' : ''}`}
   >
     <span className="text-blue-primary font-bold text-[0.75rem] uppercase tracking-[2px] block mb-2">{tag}</span>
-    <h2 className="text-ink font-extrabold text-[clamp(1.9rem,3.5vw,2.6rem)] leading-[1.15] tracking-[-0.8px] mb-3">{title}</h2>
-    {desc && <p className="text-ink-light text-base leading-[1.75] max-w-[540px] mx-auto">{desc}</p>}
+    <h2 className="text-ink font-extrabold text-[clamp(1.9rem,3.5vw,2.6rem)] leading-[1.3] tracking-[-0.8px] mb-6">{title}</h2>
+    {desc && <p className="text-ink-light text-base leading-relaxed max-w-[600px] mx-auto">{desc}</p>}
   </motion.div>
 );
 
@@ -368,18 +368,18 @@ const App = () => {
             initial={{ opacity: 0, x: -30 }} 
             animate={{ opacity: 1, x: 0 }} 
             transition={{ duration: 0.6 }}
-            className="text-center lg:text-left"
+            className="text-center lg:text-left space-y-6"
           >
-            <div className="inline-flex items-center gap-2 bg-blue-primary/12 border border-blue-primary/30 text-blue-light text-[0.78rem] font-bold uppercase tracking-[1.5px] px-4 py-1.5 rounded-full mb-6">
+            <div className="inline-flex items-center gap-2 bg-blue-primary/12 border border-blue-primary/30 text-blue-light text-[0.78rem] font-bold uppercase tracking-[1.5px] px-4 py-1.5 rounded-full mb-2">
               <span className="w-1.5 h-1.5 bg-blue-light rounded-full animate-pulse" />
               Kenya's Affordable Choice
             </div>
-            <h1 className="text-[clamp(2.6rem,5.5vw,4rem)] font-extrabold text-white leading-[1.06] tracking-[-1.5px] mb-5">
+            <h1 className="text-[clamp(2.6rem,5.5vw,4.2rem)] font-extrabold text-white leading-[1.25] tracking-[-1.5px]">
               Quality Appliances<br />
               <em className="not-italic text-blue-primary">Delivered</em> to Your<br />
-              <span className="relative inline-block after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-full after:h-[3px] after:bg-teal-primary after:rounded-full">Doorstep</span>
+              <span className="relative inline-block after:content-[''] after:absolute after:left-0 after:-bottom-3 after:w-full after:h-[5px] after:bg-teal-primary after:rounded-full pb-3">Doorstep</span>
             </h1>
-            <p className="text-white/60 text-[1.05rem] leading-[1.75] mb-8 max-w-[440px] mx-auto lg:mx-0">
+            <p className="text-white/60 text-[1.1rem] leading-relaxed max-w-[480px] mx-auto lg:mx-0">
               Shop fridges, TVs, washing machines, microwaves & more at prices every Kenyan household can afford. Fast nationwide delivery, trusted brands.
             </p>
             <div className="flex flex-wrap gap-3 justify-center lg:justify-start mb-12">
@@ -412,7 +412,7 @@ const App = () => {
           >
             {[
               { tag: 'HOT', image: '/src/assets/images/regenerated_image_1778679098819.jpg', name: 'Smart TVs', price: 'Ksh 18,000' },
-              { image: '/src/assets/images/regenerated_image_1778679094151.jpg', name: 'Fridges', price: 'Ksh 22,000' },
+              { image: 'https://lh3.googleusercontent.com/d/1u3PYybXdTyDplUOE6GTvZAqS2lvDrq5k', name: 'Fridges', price: 'Ksh 42,000' },
               { tag: 'NEW', image: '/src/assets/images/regenerated_image_1778679101623.jpg', name: 'Washers', price: 'Ksh 28,000' },
               { image: '/src/assets/images/regenerated_image_1778679100165.jpg', name: 'Microwaves', price: 'Ksh 6,500' },
               { wide: true, image: 'https://images.unsplash.com/photo-1522338242992-e1a54906a8da?auto=format&fit=crop&q=80&w=800', name: 'Gas Cookers & Stoves', price: 'From Ksh 8,500' }
@@ -544,10 +544,10 @@ const App = () => {
               { id: 'washing', label: 'Washers' },
               { id: 'microwave', label: 'Microwaves' },
               { id: 'cooker', label: 'Cookers' },
-              { id: 'gym', label: 'Gym' },
+              { id: 'lighting', label: 'Ring Light' },
               { id: 'furniture', label: 'Furniture' },
-              { id: 'kitchen', label: 'Kitchen' },
-              { id: 'household', label: 'Household' }
+              { id: 'kitchen', label: 'Blenders' },
+              { id: 'household', label: 'Iron Box' }
             ].map((cat) => (
               <button 
                 key={cat.id} 
@@ -601,13 +601,15 @@ const App = () => {
                       ))}
                     </div>
                     <div className="text-[0.72rem] font-bold text-muted uppercase tracking-widest mb-1">{product.brand}</div>
-                    <h4 className="text-[0.97rem] font-bold text-ink leading-snug h-10 line-clamp-2 mb-3">{product.name}</h4>
-                    <div className="flex items-center justify-between mt-auto">
-                      <div className="syne font-extrabold text-[1.15rem] text-blue-primary">
-                        Ksh {product.price.toLocaleString()}
-                        <sub className="bottom-0 text-[0.7rem] font-bold text-muted line-through block font-sans decoration-ink-light/30">
+                    <h4 className="text-[1rem] font-bold text-ink leading-relaxed h-14 line-clamp-2 mb-4">{product.name}</h4>
+                    <div className="flex items-end justify-between mt-auto">
+                      <div className="flex flex-col">
+                        <span className="text-muted text-[0.7rem] font-bold line-through font-sans decoration-ink-light/30 leading-none mb-1">
                           Ksh {product.originalPrice.toLocaleString()}
-                        </sub>
+                        </span>
+                        <div className="syne font-extrabold text-[1.25rem] text-blue-primary leading-none">
+                          Ksh {product.price.toLocaleString()}
+                        </div>
                       </div>
                       <button 
                         onClick={() => orderItem(product.name)}
@@ -679,7 +681,7 @@ const App = () => {
               onClick={() => filterAndScroll('fridge')}
             >
               <img 
-                src="/src/assets/images/regenerated_image_1778679094151.jpg" 
+                src="https://lh3.googleusercontent.com/d/1u3PYybXdTyDplUOE6GTvZAqS2lvDrq5k" 
                 alt="Fridges" 
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 referrerPolicy="no-referrer"
@@ -688,9 +690,9 @@ const App = () => {
               <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
                 <span className="text-white font-syne font-bold text-sm tracking-widest bg-blue-primary px-6 py-2 rounded-full flex items-center gap-2">SHOP FRIDGES <ChevronRight className="w-4 h-4" /></span>
               </div>
-              <div className="absolute bottom-0 left-0 right-0 bg-white/95 backdrop-blur-sm p-4">
-                <h4 className="font-bold text-ink">Fridges & Freezers</h4>
-                <p className="text-muted text-[0.78rem]">Single door, double door & chest freezers</p>
+              <div className="absolute bottom-0 left-0 right-0 bg-white/95 backdrop-blur-md p-5 border-t border-border/50">
+                <h4 className="font-bold text-ink text-lg">Fridges & Freezers</h4>
+                <p className="text-muted text-[0.85rem] mt-1">Single door, double door & chest freezers</p>
               </div>
             </div>
 
@@ -699,10 +701,10 @@ const App = () => {
               { id: 'washing', name: 'Washing Machines', sub: 'Top loaders, front loaders & twin tubs', image: '/src/assets/images/regenerated_image_1778679101623.jpg' },
               { id: 'microwave', name: 'Microwaves', sub: 'Solo, grill & convection models', image: '/src/assets/images/regenerated_image_1778679100165.jpg' },
               { id: 'cooker', name: 'Gas Cookers & Stoves', sub: '2, 3 & 4 burner with oven', image: '/src/assets/images/regenerated_image_1778679097327.jpg' },
-              { id: 'gym', name: 'Gym Equipment', sub: 'Treadmills, Dumbbells & Bikes', image: 'https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&q=80&w=800' },
-              { id: 'furniture', name: 'Furniture', sub: 'Sofas, Beds & Dining Tables', image: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&q=80&w=800' },
-              { id: 'kitchen', name: 'Kitchen Appliances', sub: 'Blenders, Air Fryers & Kettles', image: 'https://images.unsplash.com/photo-1585238342024-78d387f4a707?auto=format&fit=crop&q=80&w=800' },
-              { id: 'household', name: 'Household Items', sub: 'Vacuum Cleaners & Dispensers', image: 'https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&q=80&w=800' }
+              { id: 'lighting', name: 'Ring Fill Light', sub: 'Pro-level studio lighting for creators', image: 'https://lh3.googleusercontent.com/d/1LsB5jE_hecebsRkNti7dgXvJMuxy6PIC' },
+              { id: 'furniture', name: 'Furniture', sub: 'Sofas, Tables & Office Chairs', image: 'https://lh3.googleusercontent.com/d/1LX6L3ZQHHgFl_5e0Pj65yZ09EPIlkEFh' },
+              { id: 'kitchen', name: 'Binatone Blender, Grinder & Smoothie Maker', sub: 'High-speed blending & efficient grinding', image: 'https://lh3.googleusercontent.com/d/1xKAn3WH84_7RrafwI67_qH3WCokU38Ze' },
+              { id: 'household', name: 'Binatone Iron Box', sub: 'Steam & dry irons for crisp clothes', image: 'https://lh3.googleusercontent.com/d/1LVgqq3w7KwKc_fMlz-l2SeRC9Lt3KmFM' }
             ].map((cat) => (
               <div 
                 key={cat.id}
@@ -719,9 +721,9 @@ const App = () => {
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
                   <span className="text-white font-syne font-bold text-xs tracking-widest bg-blue-primary px-4 py-1.5 rounded-full uppercase flex items-center gap-1.5">Shop {cat.name} <ChevronRight className="w-3.5 h-3.5" /></span>
                 </div>
-                <div className="absolute bottom-0 left-0 right-0 bg-white/95 backdrop-blur-sm p-3.5">
-                  <h4 className="font-bold text-ink text-[1rem] leading-none">{cat.name}</h4>
-                  <p className="text-muted text-[0.78rem] mt-1.5">{cat.sub}</p>
+                <div className="absolute bottom-0 left-0 right-0 bg-white/95 backdrop-blur-md p-4 border-t border-border/50">
+                  <h4 className="font-bold text-ink text-[1rem] leading-tight">{cat.name}</h4>
+                  <p className="text-muted text-[0.78rem] mt-1.5 leading-relaxed">{cat.sub}</p>
                 </div>
               </div>
             ))}
@@ -900,10 +902,10 @@ const App = () => {
                   <option>Washing Machine</option>
                   <option>Microwave</option>
                   <option>Gas Cooker / Stove</option>
-                  <option>Gym Equipment</option>
+                  <option>Ring Fill Light</option>
                   <option>Furniture</option>
-                  <option>Kitchen Appliances</option>
-                  <option>Household Items</option>
+                  <option>Binatone Blender, Grinder & Smoothie Maker</option>
+                  <option>Binatone Iron Box</option>
                 </select>
               </div>
               <div className="mb-5">
